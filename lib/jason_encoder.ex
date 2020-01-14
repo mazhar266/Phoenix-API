@@ -1,6 +1,6 @@
 alias Devstech.Core.User
 
-# lib/poison_encoder.ex
+# lib/jason_encoder.ex
 defimpl Jason.Encoder, for: User do
     def encode(%{__struct__: _} = struct, options) do
         map = struct
